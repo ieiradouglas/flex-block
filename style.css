@@ -39,6 +39,8 @@ body {
 	margin:0 10px;
 }
 
+
+
 /*Formatação Menu*/
 .header-bg {
 	background:purple;
@@ -54,24 +56,66 @@ body {
 }
 .logo-header {
 	border:2px solid tomato;
+	margin-left: 10px;
 }
 .logo-header a {
 	font-size: 1.25em;
-	padding: 10px 15px;
+	padding: 10px;
 }
 .logo-header a:hover{
 	color:white;
 }
 
-.nav-button{
+/*Formatação do menu Vertical*/
+.nav-button {
 	display: none;
-
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 20px;
+	border:1px solid tomato;
+	width: 40px;
+	padding: 5px;
 }
+.nav-button span {
+	border-top: 2px solid black;
+	margin:5px;
+}
+.nav-lateral-bg {
+	background: rgba(0,0,0,.9);
+	box-shadow: 0px 1px 15px black;
+	position: fixed;
+	top:0;
+	min-width:50vw;
+	min-height: 100vh;
+	
+	display: none;
+	justify-content: center;
+}
+.nav-lateral h3,a {
+	color:white;
+}
+.nav-lateral {
+	border:1px solid tomato;
+}
+.nav-lateral h3 {
+	padding: 20px;
+	font-size: 1.75em;
+}
+.nav-lateral li {
+	text-align: center;
+	padding:10px;
+}
+.nav-lateral a{
+	padding:10px;
+}
+/*Formatação do menu horizontal*/                            s
 
 .nav-header {
-	border:2px solid tomato;
+	
 }
 .nav-header ul {
+	margin-right:10px;
+	border:2px solid tomato;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -151,23 +195,15 @@ body {
 	max-height:80px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 550px) {
 	.nav-header {
 		display: none;
 	}
 	.nav-button {
 		display:flex;
-		flex-direction: column;
-		justify-content: center;
-		margin-right: 20px;
-		width: 40px;
-		border: 1px solid black;
-		padding: 5px;
+		
 	}
-	.nav-button span{
-		border-top: 2px solid black;
-		margin:5px;
-
-	}
+	
 }
+
 
